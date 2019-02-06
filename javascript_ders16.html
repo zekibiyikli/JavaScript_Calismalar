@@ -1,0 +1,32 @@
+<html>
+<head>
+<script type="text/javascript">
+    function ders (isim,kod,hoca,tarih){
+        this.isim=isim;
+        this.kod=kod;
+        this.hoca=hoca;
+        this.tarih=tarih;
+        this.kacsene=kacsene;
+    }
+    function kacsene(){
+        var x=2012-this.tarih;
+        return x;
+    }
+</script>
+</head>
+<body>
+<script type="text/javascript">
+    var ders1 =new ders("Matematik",101,"Mesut",2010);
+    document.write(ders1.kacsene());
+    document.write("<br/>");
+
+    var ulke1={
+        isim:"Almanya",
+        dil:"Almanca",
+        konum:"Avrupa",
+        kurulus:1887
+    };
+    document.write(ulke1.konum);
+</script>
+</body>
+</html>

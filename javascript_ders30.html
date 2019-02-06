@@ -1,0 +1,37 @@
+<html>
+<head>
+</head>
+<body>
+<form name="form1isim">
+    <fieldset><legend>Giriş</legend>
+        Kullanıcı: <input type="text" name="kullanici_adi"/> <br/>
+        Şifre: <input type="password" name="sifre"/> 
+        <input type="button" value="Gönder" /> 
+    </fieldset>
+</form>
+<hr/>
+<form name="form2isim">
+    <fieldset><legend>Anket</legend>
+        Ikamet<br/>
+        <input type="checkbox" name="ikamet" value="TR">Türkiye
+        <input type="checkbox" name="ikamet" value="AB">Avrupa
+        <input type="checkbox" name="ikamet" value="US">Amerika
+        <input type="checkbox" name="ikamet" value="Diger">Diger
+    </fieldset>
+</form>
+<input type="button" value="chh" onClick="ff();"/>
+<script type="text/javascript">    
+    var x=document.form2isim.elements[2].checked;
+    function ff(){
+        var uzunluk=document.form2isim.length;
+        var liste=new Array();
+        for(var i=0;i<uzunluk;i++){
+            if(document.form2isim.elements[i].checked){
+                liste.push(document.form2isim.elements[i].value);
+            }
+    }
+    alert(liste.join());
+    }    
+</script>
+</body>
+</html>

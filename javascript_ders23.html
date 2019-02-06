@@ -1,0 +1,39 @@
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+    var zaman=new Date();
+    document.write(zaman);
+    document.write("<hr/>");
+    var saat=zaman.getHours();
+    document.write(saat);
+    document.write("<hr/>");
+    var dakika=zaman.getMinutes();
+    document.write(saat);
+    document.write("<hr/>");
+    var zamanDegis=new Date(2018,0,11,22,07,0,0);
+    document.write(zamanDegis);
+    document.write("<hr/>");
+    zaman.setHours(22);
+    document.write(zaman);
+    document.write("<hr/>");
+    zaman.setMinutes(22);
+    document.write(zaman);
+    document.write("<hr/>");
+
+    function yaskontrol(){
+        var dogum=prompt("doğum tılınızı giriniz","");
+        var zaman=new  Date();
+        var suan=zaman.getFullYear();
+        var result=suan-dogum;
+        if(result<18){
+            alert("Giremezsin");
+        }else{
+            alert("Girdin");
+        }
+    }
+yaskontrol();
+</script>
+</body>
+</html>

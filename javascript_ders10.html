@@ -1,0 +1,32 @@
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+    var ad="zeki";
+    var soyad="bıyklı";
+/*
+    if(ad=="zeki"){
+        if(soyad=="bıyıklı"){
+            document.write("ad ve soyad doğru");    
+        }else{
+            document.write("ad doğru soyad yanlış");
+        }
+    }else{
+        if(soyad=="bıyıklı"){
+            document.write("ad yanlış soyad doğru")
+        }else{
+            document.write("ad ve soyad yanlış");
+        }    
+    }
+*/
+    if((ad=="zeki") && (soyad=="bıyıklı")){
+        document.write("Eşleşme sağlandı");
+    }else if((ad=="zeki") || (soyad=="bıyıklı")){
+        document.write("Eşleşmelerden en az biri sağlandı");
+    }else{
+        document.write("Eşleşme sağlanmadı");
+    }
+</script>
+</body>
+</html>
